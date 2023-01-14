@@ -1,0 +1,117 @@
+/* ***** QUESTION: CSS IS ADDING 5 GROW ROWS INSTEAD OF 4. WHY???*/
+
+
+/* Main body and links */
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 33px;
+    margin-right: 33px;
+    background-image: url('images/endangered.png');
+    color:antiquewhite;
+}
+
+main {
+  background-color: rgba(16, 4, 58, 0.467);
+  padding: 2%;
+  border-radius: 10px;
+}
+
+#link {
+  color: rgb(46, 198, 221);
+}
+
+#link:hover {
+  font-weight: bold;
+  color: rgb(201, 221, 19);
+  
+}
+
+/* Grid stuff: */
+
+#header {
+  grid-area: header;
+  color:antiquewhite;
+}
+
+#main {
+  margin-top: 2px;
+  grid-area: main;
+}
+
+#footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+#list {
+  grid-area: list;
+  display: flex;
+  margin-right: 3%;
+  margin-top: -15%;
+  width: fit-content;
+  text-align: left;
+  padding: 1%;
+  background-color: rgba(143, 227, 236, 0.769);
+  border-radius: 20px;
+  color: rgb(3, 5, 42);
+  align-self: center;
+}
+
+#form-container{
+  grid-area: form-container;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+#grid-container{
+  display: grid;
+  grid-template-areas: 
+  'header header'
+  'main main'
+  'form-container list'
+  'footer footer';
+  grid-template-columns: 60% 40%; 
+  grid-template-rows: 15% 45% 45% 0%;
+}  
+
+#form-flex {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 50px;
+  margin-right: 20%;
+  padding: 1%;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.769);
+  border-radius: 20px;
+  color: rgb(3, 5, 42);
+  width: bold;
+  
+  
+}
+
+/* #button-input {
+  display: flex;
+  margin-top: 8%;
+  margin-left: -35rem;
+} */
+
+#submit_species {
+  background-color: rgb(232, 90, 74);
+  border-radius: 20%;
+  border-color: rgb(247, 79, 79);
+  width: 150px;
+}
+
+#submit_species:hover {
+  background-color: rgb(248, 46, 31);
+}
+
+/* JS Form interactions: */
+
+
+
+
+
+
