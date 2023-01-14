@@ -1,7 +1,7 @@
 /* ***** QUESTION: CSS IS ADDING 5 GROW ROWS INSTEAD OF 4. WHY???*/
 
 
-/* Main body and links */
+/* Main body, links, button */
 
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -27,6 +27,25 @@ main {
   
 }
 
+#button {
+  margin-bottom: -10%;
+}
+
+#submit_species {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -15%;
+  margin-left: 10%;
+  font-weight: bold;;
+  background-color: rgb(232, 90, 74);
+  border-radius: 20%;
+  border-color: rgb(247, 79, 79);
+}
+
+#submit_species:hover {
+  background-color: rgb(248, 46, 31); 
+}
+
 /* Grid stuff: */
 
 #header {
@@ -47,10 +66,12 @@ main {
 #species_form {
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
+  gap: 10px;
   vertical-align: middle;
   padding: 1%;
   width:95%;
+  height: 50%;
   background-color: rgba(255, 255, 255, 0.769);
   border-radius: 20px;
   color: rgb(3, 5, 42);
@@ -59,16 +80,17 @@ main {
 #list {
   grid-area: list;
   display: flex;
-  margin-right: 3%;
-  margin-bottom: -9%;
-  width: 95%;
+  width: 85%;
+  margin-left: 11%;
   height: 50%;
   padding: 10px;
   text-align: left;
-  background-color: rgba(143, 227, 236, 0.769);
+  background-color: rgba(146, 11, 11, 0.843);
   border-radius: 20px;
   color: rgb(3, 5, 42);
   align-self: center;
+  font-weight: bold;
+  color: rgb(255, 209, 148);
 }
 
 #grid-container{
@@ -81,24 +103,6 @@ main {
   grid-template-columns: 60% 40%; 
   grid-template-rows: 14% 42% 42% 0%;
 }  
-
-
-#button-input {
-  display: flex;
-  margin-top: 8%;
-  margin-left: -35rem;
-} */
-
-#submit_species {
-  background-color: rgb(232, 90, 74);
-  border-radius: 20%;
-  border-color: rgb(247, 79, 79);
-  width: 150px;
-}
-
-#submit_species:hover {
-  background-color: rgb(248, 46, 31); 
-}
 /* JS Form interactions: */
 
 

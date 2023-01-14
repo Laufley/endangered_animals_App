@@ -25,60 +25,24 @@ const handleFormSubmit = function (event) {
     event.preventDefault();
     const resultParagraph = document.querySelector('#form-result');
     resultParagraph.textContent = `
-    We are destroying the species:
-    ${input.value};
-    Which lives in:
-    ${select.value}`
+    We are losing the
+    ${input.value}
+    from
+    ${select.value}!!`
 
     const outputSpecies = document.querySelector('#input');
     const outputContinent = document.querySelector('#select');
-    const list = document.querySelector('#list');
+    const list = document.querySelector('#list ul');
     const newItem = document.createElement('li');
-    newItem.textContent = outputSpecies.value + outputContinent.value;
+    newItem.textContent = outputSpecies.value + " - " + outputContinent.value;
     list.appendChild(newItem);
 
 }
 
 
-
-
-    // function handleSubmit(event) {
-    //     event.preventDefault();
-    //     const speciesName = document.getElementById("input").value;
-    //     const continent = document.getElementById("select").value;
-        
-
-    //     const handleFormSubmit = function (event) {
-    //         event.preventDefault();
-    //         const resultParagraph = document.querySelector('#form-result');
-    //         resultParagraph.textContent = `
-    //           Your name:
-    //           ${this.first_name.value}
-    //           ${this.last_name.value}`
-
-
-//     }
-// }
-// };
-
-// const button
-
-// const list = document.querySelector('ul');
-// const newItem = document.createElement('li');
-// newItem.textContent = handleInput.event.target.value + handleSelectChange.event.target.value;
-// list.appendChild(newItem);
-
-//Creating new item
-
-    // const newListItem = document.createElement("li") // create a new item
-    // newListItem.textContent = "test" // what the new element says
-    // const list = document.querySelector("ul") // selecting the parent of the element, and capturing under a variable called 'list'
-    // list.appendChild(newListItem) // appending the new child to the parent now callew 'list'
-
-
 // ****1.Create a form in HTML with inputs for relevant data DONE
 // ****2.When the form is submitted, access the data from the form in the form's submit event object
 // ****3.Create a list in HTML
-// 4.Append the submitted data to the list
+// ****4.Append the submitted data to the list
 // 5.Add a "Delete All" <button> which clears all of the list items from the list
 
