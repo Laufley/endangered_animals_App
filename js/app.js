@@ -4,19 +4,54 @@ document.addEventListener('DOMContentLoaded',() => {
 
     const select = document.querySelector('#select');
     select.addEventListener('change', handleSelectChange);
+
+    const form = document.querySelector('#species_form');
+    form.addEventListener('submit', handleFormSubmit)
 })  
+
 
 //  FUNCTIONS
 const handleInput = function (event) {
     const output = document.querySelector('#input-result');
     output.textContent = `The species: ${event.target.value}`;
 };
-            //var animal = handleInput.output
 
 const handleSelectChange = function (event) {
     const resultParagraph = document.querySelector('#select-result');
     resultParagraph.textContent = `Lives in: "${event.target.value}".`;
-};
+}
+
+const handleFormSubmit = function (event) {
+    event.preventDefault();
+    const resultParagraph = document.querySelector('#form-result');
+    resultParagraph.textContent = `
+    We are destroying the species:
+    ${input.value};
+    Which lives in:
+    ${select.value}`
+}
+
+
+
+
+    // function handleSubmit(event) {
+    //     event.preventDefault();
+    //     const speciesName = document.getElementById("input").value;
+    //     const continent = document.getElementById("select").value;
+        
+
+        // const handleFormSubmit = function (event) {
+        //     event.preventDefault();
+        //     const resultParagraph = document.querySelector('#form-result');
+        //     resultParagraph.textContent = `
+        //       Your name:
+        //       ${this.first_name.value}
+        //       ${this.last_name.value}`
+
+
+//     }
+// }
+// };
 
 // const button
 
