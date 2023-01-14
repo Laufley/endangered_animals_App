@@ -7,6 +7,15 @@ document.addEventListener('DOMContentLoaded',() => {
 
     const form = document.querySelector('#species_form');
     form.addEventListener('submit', handleFormSubmit)
+
+    //delete all: has to go here because if it goes after the addChild, it doesn't let me delete until I add an item to the list
+    const clearAll = document.querySelector('#button_delete');
+    clearAll.addEventListener('click', function () {
+        let listSpecies= document.querySelectorAll("#list li");
+        listSpecies.forEach(function(item){
+            item.remove();
+        });
+    });
 })  
 
 
@@ -30,6 +39,7 @@ const handleFormSubmit = function (event) {
     from
     ${select.value}!!`
 
+// addChild to list ul
     const outputSpecies = document.querySelector('#input');
     const outputContinent = document.querySelector('#select');
     const list = document.querySelector('#list ul');
@@ -39,10 +49,4 @@ const handleFormSubmit = function (event) {
 
 }
 
-
-// ****1.Create a form in HTML with inputs for relevant data DONE
-// ****2.When the form is submitted, access the data from the form in the form's submit event object
-// ****3.Create a list in HTML
-// ****4.Append the submitted data to the list
-// 5.Add a "Delete All" <button> which clears all of the list items from the list
 

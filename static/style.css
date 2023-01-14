@@ -148,36 +148,6 @@ main {
   background-color: blue;
 }
 
-/* 
-------
-h3 {
-  grid-area: text;
-}
-
-#button_delete {
-  grid-area: button2;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: -15%;
-  margin-left: 10%;
-  font-weight: bold;;
-  background-color: rgb(68, 54, 226);
-  border-radius: 20%;
-  border-color: rgb(28, 24, 237);
-}
-
-#button_delete:hover {
-  background-color: rgb(8, 8, 119); 
-}
-
-ul {
-  grid-area: list;
-}
-
-#button2 {
-  margin-bottom: -10%;
-} */
 
 
 
