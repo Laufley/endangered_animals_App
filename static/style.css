@@ -46,7 +46,9 @@ main {
   background-color: rgb(248, 46, 31); 
 }
 
-/* Grid stuff: */
+
+
+/* Grid form: */
 
 #header {
   grid-area: header;
@@ -71,7 +73,7 @@ main {
   vertical-align: middle;
   padding: 1%;
   width:95%;
-  height: 50%;
+  height: 60%;
   background-color: rgba(255, 255, 255, 0.769);
   border-radius: 20px;
   color: rgb(3, 5, 42);
@@ -80,17 +82,18 @@ main {
 #list {
   grid-area: list;
   display: flex;
-  width: 85%;
-  margin-left: 11%;
-  height: 50%;
+  width: 95%;
+  margin-top: 8%;
+  margin-left: 2%;
+  height: 58%;
   padding: 10px;
   text-align: left;
-  background-color: rgba(146, 11, 11, 0.843);
+  background-color: rgba(95, 7, 72, 0.694);
   border-radius: 20px;
   color: rgb(3, 5, 42);
   align-self: center;
   font-weight: bold;
-  color: rgb(255, 209, 148);
+  color: rgb(255, 241, 223);
 }
 
 #grid-container{
@@ -102,8 +105,80 @@ main {
   'footer footer';
   grid-template-columns: 60% 40%; 
   grid-template-rows: 14% 42% 42% 0%;
+
 }  
-/* JS Form interactions: */
+/* grid list */
+
+#list {
+  display: grid;
+  grid-template-areas: 
+  "text list"
+  "button list";
+  display: flex;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 70%;
+  justify-content: space-around;
+}
+
+#list > h3 {
+  grid-area: text;
+}
+
+
+#button2 {
+  grid-area: button;
+  margin-top: 25%;
+}
+
+#list > ul {
+  grid-area: list;
+  text-align: left;
+}
+
+#button_delete {
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(62, 49, 198);
+  border-radius: 20%;
+  border-color: rgb(75, 1, 212);
+}
+
+#button_delete:hover {
+  background-color: blue;
+}
+
+/* 
+------
+h3 {
+  grid-area: text;
+}
+
+#button_delete {
+  grid-area: button2;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -15%;
+  margin-left: 10%;
+  font-weight: bold;;
+  background-color: rgb(68, 54, 226);
+  border-radius: 20%;
+  border-color: rgb(28, 24, 237);
+}
+
+#button_delete:hover {
+  background-color: rgb(8, 8, 119); 
+}
+
+ul {
+  grid-area: list;
+}
+
+#button2 {
+  margin-bottom: -10%;
+} */
+
 
 
 
