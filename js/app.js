@@ -29,6 +29,14 @@ const handleFormSubmit = function (event) {
     ${input.value};
     Which lives in:
     ${select.value}`
+
+    const outputSpecies = document.querySelector('#input');
+    const outputContinent = document.querySelector('#select');
+    const list = document.querySelector('#list');
+    const newItem = document.createElement('li');
+    newItem.textContent = outputSpecies.value + outputContinent.value;
+    list.appendChild(newItem);
+
 }
 
 
@@ -40,13 +48,13 @@ const handleFormSubmit = function (event) {
     //     const continent = document.getElementById("select").value;
         
 
-        // const handleFormSubmit = function (event) {
-        //     event.preventDefault();
-        //     const resultParagraph = document.querySelector('#form-result');
-        //     resultParagraph.textContent = `
-        //       Your name:
-        //       ${this.first_name.value}
-        //       ${this.last_name.value}`
+    //     const handleFormSubmit = function (event) {
+    //         event.preventDefault();
+    //         const resultParagraph = document.querySelector('#form-result');
+    //         resultParagraph.textContent = `
+    //           Your name:
+    //           ${this.first_name.value}
+    //           ${this.last_name.value}`
 
 
 //     }
